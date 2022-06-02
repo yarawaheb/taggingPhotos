@@ -1,0 +1,69 @@
+.allPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    flex: 8;
+}
+.topLeft{
+    max-height: 65%;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-around;
+}
+.bottomLeft{
+    height: 35%;
+    border-top: black solid 1px ;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+
+}
+.right{
+    flex: 3;
+    border-left:black solid 1px ;
+
+}
+.noTags{
+    position: absolute;
+    top: 10%;
+    font-size: 40px;
+    color: rgb(224, 220, 220);
+    cursor: default;
+    text-align: center;
+
+}
+.sideBar{
+    height: 90%;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+}
+.sideBarBottom{
+    height: 10%;
+}
+.cardLayer{
+    padding: 3px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    display: flex;
+    flex-direction: column;
+}
+.imageCard{
+    max-width: 100px;
+    height: 100px;
+}
+.cardButtom{
+    display: flex;
+    float: left;
+    justify-content: space-between;
+}
+.cardId{
+    float: left;
+}
