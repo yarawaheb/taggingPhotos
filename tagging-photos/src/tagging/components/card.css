@@ -1,0 +1,41 @@
+.matchingIcon{
+    cursor: pointer;
+}
+.cardLayer{
+    padding: 3px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    display: flex;
+    flex-direction: column;
+}
+.imageCard{
+    max-width: 100px;
+    height: 100px;
+}
+.cardButtom{
+    display: flex;
+    float: left;
+    justify-content: space-between;
+}
+.cardId{
+    float: left;
+}
+.matchingWindow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 60%;
+    height: 60vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+}
+.exit{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
