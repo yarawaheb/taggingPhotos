@@ -1,0 +1,25 @@
+.matching{
+    height: 20%;
+    width: 90%;
+}
+.available{
+
+}
+.tag{
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.imgInTag{
+    width: 20px;
+    height: 20px;
+}
+.matchingGallery{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-between;
+    align-items: center;
+}
