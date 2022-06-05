@@ -120,7 +120,9 @@ export default function TagBox(props: { name: string ,color:string ,case:string,
             <button onClick={()=>setIsEditing(!isEditing)}>cancel</button>
           </div></div>:null}
       </div>
-      {filter?<div className='filtered'>
+      {filter?<div className='filtered ' style={{
+          backgroundColor: theNewTag.color,
+        }}>
         <div className='topFiltered'><span>{props.name}</span><span className='exit' onClick={()=>setFilter(!filter)}><MdOutlineCancel/></span></div>
         <div className='imagesInFilter'>{imgArray.map((curr,i)=>{
           return <div className='imgAfterFilter'><img src={curr.imgUrl} alt="" /><span className='deleteImgIcon' onClick={()=>{deleteImgFromTag(curr);setFilter(!filter)}}><AiOutlineDelete /></span></div>
