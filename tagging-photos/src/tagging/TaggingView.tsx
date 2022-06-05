@@ -76,7 +76,7 @@ export default function TaggingView() {
               <input type="text" placeholder='Hex color' onBlur={(e)=>{setTag({...theNewTag,color:e.target.value})}}/>
               <a href="https://www.w3schools.com/colors/colors_picker.asp?colorhex=ff0000" target="_blank"><BiHelpCircle/></a>
             </div>
-            <button onClick={()=>{newTag(theNewTag)}}>add</button>
+            <button onClick={()=>{newTag(theNewTag);setAddingTag(!addingTag)}}>add</button>
           </div>:""}
 
           <button className='newTagBtn' onClick={()=>{setAddingTag(!addingTag);setAddingTag(!addingTag)}}>{!addingTag?"New tag":"cancel"}</button>
