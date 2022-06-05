@@ -11,6 +11,7 @@
     width: 80%;
     margin-top: 5%;
     margin-left: 10%;
+    display: flex;
 }
 .imgInTag{
     width: 20px;
@@ -22,4 +23,57 @@
     overflow-y: scroll;
     justify-content: space-between;
     align-items: center;
+}
+.editTag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10%;
+    
+    width: 70%;
+}
+.editDeleteIcon{
+    position: fixed;
+    right: 0;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.tagName{
+    cursor: pointer;
+}
+.filtered{
+    width: 60%;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: rgb(196, 247, 230);
+    overflow-y: scroll;
+    
+}
+.imagesInFilter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.imgAfterFilter{
+    display: flex;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+.imgAfterFilter img{
+    height: 150px;
+    width: 150px;
+}
+.deleteImgIcon{
+    cursor: pointer;
 }
