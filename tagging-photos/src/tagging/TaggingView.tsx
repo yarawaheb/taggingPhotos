@@ -11,7 +11,6 @@ export default function TaggingView() {
   let[theNewTag,setTag]=useState({name:"",color:""})
   let[tags,setTags]=useState([{name:"",color:""}])
   let[firstTime,setFirstTime]=useState(true)
-  let[firstTime1,setFirstTime1]=useState(true)
   let[isAllPhotos,setIsAllPhotos]=useState(true)
   let[allimageArray,setArray]=useState([{id:0,download_url:""}])
   let[unssignedImageArray,setUnssignedArray]=useState([{id:0,download_url:""}])
@@ -37,15 +36,20 @@ export default function TaggingView() {
   }
 
   function newTag(theNewTag: { name: string; color: string }) {
-    if(firstTime){
-      setTags([theNewTag]);
-      setFirstTime(false)
+    if(theNewTag.name===""||!(/^#[0-9A-Fa-f]{6}$/.test(theNewTag.color))){
+      alert('unvalid tag');
     }
     else{
-      setTags([...tags,theNewTag]);
+      if(firstTime){
+        setTags([theNewTag]);
+        setFirstTime(false)
+      }
+      else{
+        setTags([...tags,theNewTag]);
+      }
+      let newObj={tagInfo:theNewTag,imgArr:[{imgId:0,imgUrl:""}]}
+      matchingTags.push(newObj)
     }
-    let newObj={tagInfo:theNewTag,imgArr:[{imgId:0,imgUrl:""}]}
-    matchingTags.push(newObj)
 }
   return (
     <div className='allPage'>
