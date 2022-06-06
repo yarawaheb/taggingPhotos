@@ -5,7 +5,7 @@
 This project is currently in development. Users can assign photos to tags or more ,Users can create a new tag edit and delete,and filter by a specific tag .functionality of search a tag/photo is in progress.
 
 # Project Screen Shots
-This is the first page you will get when you starting the app
+Assuming there is a login system where each user logs in with a personal username and password after the user successfully logs in this is the first screen he reaches
 ![image](https://user-images.githubusercontent.com/64200819/172068474-5af6fbdb-b7d5-4668-a95f-a99161107d93.png)
 
 
@@ -44,6 +44,21 @@ each tag can be renamed or recolored by clicking on edit icon ,in this example t
 -----------------------------------------------------------------------------------------------------------------------------
 each tag can be deleted by clicking on delete icon, in this example the sky tag deleted
 ![image](https://user-images.githubusercontent.com/64200819/172069470-edd3597c-a933-442c-bf25-3cbf9f7535e9.png)
+
+In fact each user in addition to his personal details and login details will have a list of tags so that each tag will have a list of images that belong to him
+
+
+# Tests
+* tests that will needed to login system
+   1. empty fields(username/password)
+   2. username exist in database
+   3. password match to username
+
+* tests that will needed to tagging system
+   1. tag label not empty
+   2. color is valid hex color
+   3. image already exist in specific tag
+   4. tag label and color already exist for specific user
 
 # Installation and Setup Instructions
 Clone down this repository. 
