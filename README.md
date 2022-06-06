@@ -17,8 +17,7 @@ by clicking on "New tag" button ,this window will open. the user need to fill th
 
 
 ------------------------------------------------------------------------------------------------------------------------------
-after pressing on "add" button the new tag will show below the available tags
-* (test for empty label and valid color still in progress) 
+after pressing on "add" button the if the new tag is valid it will show below the available tags
 ![image](https://user-images.githubusercontent.com/64200819/172069000-0f7ced10-0ea7-4d6e-be0f-f0a96ed8e30f.png)
 
 
